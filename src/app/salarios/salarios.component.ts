@@ -51,7 +51,10 @@ export class SalariosComponent  implements OnInit {
   
       this.afp = this.salario * 0.0725
 
-      
+      this.calculoisss = this.salario * 0.03
+
+    
+
 
       
     
