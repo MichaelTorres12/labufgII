@@ -12,12 +12,14 @@ export class SalariosComponent  implements OnInit {
   afp: number = 0
   isss:number = 0
   calculoisss:number = 0
+  salarioFinal = 0
   constructor() {}
 
   ngOnInit(): void {
       
   }
 
+  //Impuesto sobre la renta
   pressKey(miVariable: any) {
     console.log("test")
     this.salario =+miVariable.target.value
@@ -47,18 +49,20 @@ export class SalariosComponent  implements OnInit {
       this.renta = this.salario * 0.3
     }
 
-    //calculo afp
-  
+    //calculo de la AFP.
       this.afp = this.salario * 0.0725
 
+    //Calculo del ISSS.
       this.calculoisss = this.salario * 0.03
-
       if(this.calculoisss <= 30.00){
         this.isss = this.salario * 0.03
       }else{
         this.isss = 30.00
       } 
     
+     //Salario liquido a cancelar
+     this.salarioFinal = this.salario - this.afp - this.isss - this.renta 
+
   }
 
 
