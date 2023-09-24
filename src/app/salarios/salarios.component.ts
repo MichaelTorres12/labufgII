@@ -9,7 +9,9 @@ export class SalariosComponent  implements OnInit {
 
   salario: number = 0
   renta: number = 0
-
+  afp: number = 0
+  isss:number = 0
+  calculoisss:number = 0
   constructor() {}
 
   ngOnInit(): void {
@@ -19,7 +21,7 @@ export class SalariosComponent  implements OnInit {
   pressKey(miVariable: any) {
     console.log("test")
     this.salario =+miVariable.target.value
-
+    this.afp =+miVariable.target.value
     if (this.salario >= 0.01 && this.salario <= 487.60) {
 
       this.renta = 0
@@ -44,6 +46,18 @@ export class SalariosComponent  implements OnInit {
 
       this.renta = this.salario * 0.3
     }
+
+    //calculo afp
+  
+      this.afp = this.salario * 0.0725
+
+      
+
+      
+    
+
   }
+
+
 
 }
