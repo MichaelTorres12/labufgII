@@ -53,12 +53,12 @@ export class SalariosComponent  implements OnInit {
 
       this.calculoisss = this.salario * 0.03
 
+      if(this.calculoisss <= 30.00){
+        this.isss = this.salario * 0.03
+      }else{
+        this.isss = 30.00
+      } 
     
-
-
-      
-    
-
   }
 
 
