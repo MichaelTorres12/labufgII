@@ -1,7 +1,11 @@
-<h1>Ingrese su salario</h1>
-<p>Salario: </p><input type="number" (keyup)="pressKey($event)">
-<p>Salario base: {{salario.toFixed(2)}}</p>
-<p>Descuento de renta: {{renta.toFixed(2)}}</p>
-<p>Descuento afp: {{afp.toFixed(2)}}</p>
-<p>Descuento Isss: {{isss.toFixed(2)}}</p>
-<p>Salario liquido a cancelar: {{salarioFinal.toFixed(2)}}</p>
+<div class="calcsWrapperG">
+    <div class="calcsWrapper">
+        <h1>Ingrese su salario</h1>
+        <p>Salario: </p><input type="number" (keyup)="pressKey($event)">
+        <p>Salario base: {{salario.toFixed(2)}}</p>
+        <p>Descuento de renta: {{renta.toFixed(2)}}</p>
+        <p>Descuento afp: {{afp.toFixed(2)}}</p>
+        <p>Descuento Isss: {{isss.toFixed(2)}}</p>
+        <p>Salario liquido a cancelar: {{salarioFinal.toFixed(2)}}</p>
+    </div>
+</div>

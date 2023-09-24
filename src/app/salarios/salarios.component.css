@@ -1,0 +1,23 @@
+.calcsWrapperG{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.calcsWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(47, 200, 242);
+    border-radius: 30px;
+    width: 600px;
+    height: auto;
+}
+
+.calcsWrapperG > .calcsWrapper > h1{
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline red;
+}
