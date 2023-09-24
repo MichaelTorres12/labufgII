@@ -1,0 +1,42 @@
+.generalWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapperButton{
+    background-color: rgb(113, 212, 242);
+    width: 500px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.calcularImpuestos{
+    background-color: rgb(30, 208, 98);
+    border: 2px, solid, black;
+    width: 200px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+.calcularImpuestos:hover{
+    cursor: pointer;
+    transform: translateY(-7px);
+
+    background-color: rgb(0, 153, 59);
+    color: white;
+    width: 230px;
+    height: 90px;
+    font-size: 23px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px rgba(2, 2, 2, 0.5);
+}
