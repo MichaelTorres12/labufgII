@@ -40,7 +40,10 @@ export class SalariosComponent  implements OnInit {
       this.renta = this.salario * 0.2
     }
 
-    
+    else if (this.salario >= 2058.68) {
+
+      this.renta = this.salario * 0.3
+    }
   }
 
 }
